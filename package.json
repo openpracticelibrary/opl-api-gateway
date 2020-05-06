@@ -1,0 +1,23 @@
+{
+  "name": "opl-api-gateway",
+  "version": "1.0.0",
+  "description": "Apollo Federation Gateway for Open Practice Library",
+  "main": "gateway.js",
+  "scripts": {
+    "start": "node gateway.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/openpracticelibrary/opl-api-gateway.git"
+  },
+  "author": "Shahein Moussavi",
+  "bugs": {
+    "url": "https://github.com/openpracticelibrary/opl-api-gateway/issues"
+  },
+  "homepage": "https://github.com/openpracticelibrary/opl-api-gateway#readme",
+  "dependencies": {
+    "@apollo/gateway": "^0.15.0",
+    "apollo-server": "^2.13.0",
+    "graphql": "^15.0.0"
+  }
+}
