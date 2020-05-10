@@ -7,7 +7,7 @@ const gateway = new ApolloGateway({
   // ServiceList is optional, can use Apollo Graph Manager here as single source of truth
   // Graph Manager will also enable server tracing and schema management tools
   serviceList: federatedApis,
-
+  experimental_pollInterval: 3000,
   // Experimental query plan view
   __exposeQueryPlanExperimental: true,
 });
