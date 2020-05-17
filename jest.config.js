@@ -1,3 +1,3 @@
 module.exports = {
-  setupFiles: ["<rootDir>/test/utils/setEnvVars.js"],
+  setupFiles: ['<rootDir>/test/utils/setEnvVars.js'],
 };

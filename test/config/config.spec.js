@@ -1,4 +1,4 @@
-const config = require('../../src');
+const config = require('../../src/config/config');
 
 const correctResponse = [
   { name: 'content', url: 'https://not.a.real.url' },
