@@ -1,4 +1,4 @@
-name: Create Prerelease Tagged Image
+name: API Gateway Prerelease
 
 on:
   release:

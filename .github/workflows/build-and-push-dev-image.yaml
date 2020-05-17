@@ -1,4 +1,4 @@
-name: build-and-push-dev-image
+name: API Gateway Dev Build
 
 on:
   push:
