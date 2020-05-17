@@ -1,13 +1,13 @@
-const config = require("../../config");
+const config = require('../../src');
 
 const correctResponse = [
-  { name: "content", url: "https://not.a.real.url" },
-  { name: "versioning", url: "https://also.not.real" },
-  { name: "media", url: "https://the.fakest.url" },
+  { name: 'content', url: 'https://not.a.real.url' },
+  { name: 'versioning', url: 'https://also.not.real' },
+  { name: 'media', url: 'https://the.fakest.url' },
 ];
 
-describe("Config setup", () => {
-  test("returns the correct service list for federated APIs passed to env variables", () => {
+describe('Config setup', () => {
+  test('returns the correct service list for federated APIs passed to env variables', () => {
     expect(config.federatedApis).toEqual(correctResponse);
   });
 });
