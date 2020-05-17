@@ -4,7 +4,9 @@
   "description": "Apollo Federation Gateway for Open Practice Library",
   "main": "gateway.js",
   "scripts": {
-    "start": "node gateway.js"
+    "start": "node gateway.js",
+    "test": "jest test/**/*.spec.js",
+    "lint": "eslint src/*.js src/**/*.js gateway.js --ignore-pattern **/*.spec.js"
   },
   "repository": {
     "type": "git",
@@ -18,10 +20,16 @@
   "dependencies": {
     "@apollo/gateway": "^0.15.0",
     "apollo-server": "^2.13.0",
-    "graphql": "^15.0.0"
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.3",
+    "graphql": "^15.0.0",
+    "prettier": "^2.0.5"
   },
   "devDependencies": {
     "apollo-server-testing": "^2.13.1",
+    "eslint": "^7.0.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
     "jest": "^26.0.1"
   }
 }
