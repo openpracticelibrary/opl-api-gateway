@@ -14,7 +14,7 @@ dockerbuild:
 
 dockerstart:
 	docker start -d --rm \
-	-p 5000:5000 \
+	-p 4000:4000 \
 	--net=host \
 	-e CONTENT_API_ENDPOINT="http://localhost:1337/graphql" \
 	-e VERSIONING_API_ENDPOINT="" \
@@ -31,7 +31,7 @@ podmanbuild:
 
 podmanstart:
 	podman run -d --rm \
-	-p 5000:5000 \
+	-p 4000:4000 \
 	--net=host \
 	-e CONTENT_API_ENDPOINT="http://localhost:1337/graphql" \
 	-e VERSIONING_API_ENDPOINT="" \
