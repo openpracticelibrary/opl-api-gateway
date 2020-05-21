@@ -1,7 +1,7 @@
 const { ApolloServer } = require('apollo-server');
 const { ApolloGateway } = require('@apollo/gateway');
 
-const { federatedApis } = require('./src');
+const { federatedApis } = require('./src/config/config');
 
 const createGateway = (serviceList) => {
   return new ApolloGateway({
