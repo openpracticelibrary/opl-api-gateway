@@ -5,10 +5,8 @@ STATUS_MEDIA_API=$(curl -s -o /dev/null -w '%{http_code}' $OPL_MEDIA_SERVICE_SVC
 
 if [ $STATUS_CONTENT_API -eq 200 ] && [ $STATUS_MEDIA_API -eq 200 ]
 then
-    echo "it worked"
     exit 0
 else
-    echo "didnt work"
     exit 1
 fi
 
