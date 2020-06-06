@@ -19,7 +19,7 @@
   "homepage": "https://github.com/openpracticelibrary/opl-api-gateway#readme",
   "dependencies": {
     "@apollo/gateway": "^0.15.0",
-    "apollo-server": "^2.13.0",
+    "apollo-server": "^2.14.2",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-prettier": "^3.1.3",
     "graphql": "^15.0.0",
