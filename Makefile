@@ -9,6 +9,13 @@ start:
 	MEDIA_API_ENDPOINT="http://localhost:4002/graphql" \
 	node gateway.js
 
+startRemote:
+	@ENVIRONMENT=local \
+	CONTENT_API_ENDPOINT="http://opl-content-api-opl-dev.apps.s44.core.rht-labs.com/graphql" \
+	VERSIONING_API_ENDPOINT="" \
+	MEDIA_API_ENDPOINT="http://opl-media-service-opl-dev.apps.s44.core.rht-labs.com/graphql" \
+	node gateway.js
+
 dockerbuild:
 	docker build -t opl-api-gateway .
 
