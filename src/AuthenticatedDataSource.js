@@ -1,3 +1,4 @@
+/* eslint class-methods-use-this: ["error", { "exceptMethods": ["willSendRequest"] }] */
 const { RemoteGraphQLDataSource } = require('@apollo/gateway');
 
 class AuthenticatedDataSource extends RemoteGraphQLDataSource {
